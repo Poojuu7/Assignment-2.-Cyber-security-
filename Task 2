@@ -1,0 +1,45 @@
+def caesar cipher (text, shift):
+
+encrypted text fet char in text:
+
+if char.isalpha():
+
+if char.isupper():
+
+encrypted text += chr((ord(char) 65 shift) 26 + 65)
+
+else: encrypted_text= chr(ford (char) 97+ shift) 2697)
+
+else:
+
+encrypted text += char
+
+return encrypted_text
+
+return caesar_cipher (text, shift)
+
+def encrypt(text, shift):
+
+def decrypt(text, shift): return caesar_cipher(text, -shift)
+
+def main():
+
+choice input ("Do you want to encrypt or decrypt? (e/d): ").lower()
+
+plaintext input("Enter the text to encrypt: ")
+
+if choice:
+
+shift int(input("Enter the shift value: ")) encrypted text encrypt (plaintext, shift)
+
+print("Encrypted text:", encrypted_text) elif choice'd':
+
+ciphertext input("Enter the text to decrypt: ") shift int(input("Enter the shift value: "}}
+
+decrypted text decrypt (ciphertext, shift) print("Decrypted text:", decrypted text)
+
+else: print("Invalid choice. Please enter 'e' for encryption or 'd' for decryption.")
+
+if name main()
+
+"main":
